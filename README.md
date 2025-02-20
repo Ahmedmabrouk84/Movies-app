@@ -9,14 +9,14 @@ A movie streaming platform designed to enhance user experience and responsivenes
 </p>
 <h2>🚀 Key Improvements:</h2>
 <ul>
-  <li>
-   Fully responsive design for all devices.   ✔️
+   ✔️<li>
+   Fully responsive design for all devices.  
   </li>
-  <li>
-   Enhanced UI using Bootstrap. ✔️
+  ✔️<li>
+   Enhanced UI using Bootstrap. 
   </li>
-  <li>
- Faster development with pre-built components.. ✔️
+  ✔️<li>
+ Faster development with pre-built components.. 
   </li>
 </ul>
 
