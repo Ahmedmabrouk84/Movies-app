@@ -19,62 +19,50 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!--Navbar  -->
-    <header>
-      <a href="#home" class="logo text-decoration-none">
-        <i class="fa-solid fa-film"></i> Movies
-      </a>
-      <div id="menu-icon"><i class="fa-solid fa-bars"></i></div>
-      <!-- menu -->
-      <ul class="navbar">
-        <li><a class="home-active" href="#home">Home</a></li>
-        <li><a href="#movies">Movies</a></li>
-        <li><a href="#coming soon">Coming Soon</a></li>
-        <li><a href="#newsletter">Newsletter</a></li>
-      </ul>
-      <a href="#" class="btn btn-danger px-4">Sign In</a>
+    <!-- Navbar -->
+    <header class="navbar navbar-expand-lg position-fixed w-100 py-3">
+      <div class="container">
+        <a class="navbar-brand logo" href="#">
+          <i class="fa-solid fa-film"></i>
+          Movies
+        </a>
+        
+        <button
+          class="navbar-toggler bg-danger"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <div id="menu-icon"><i class="fa-solid fa-bars"></i></div>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav navbar mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="home-active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#movies">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a href="#coming soon">Coming Soon</a>
+            </li>
+            <li class="nav-item">
+              <a href="#newsletter">Newsletter</a>
+            </li>
+          </ul>
+
+          <div role="search">
+            <button class="btn btn-danger px-4" type="submit">Login</button>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <!-- Navbar -->
-    <!-- 
-    
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
-    -->
     <!-- end navbar -->
 
     <!-- Home -->
@@ -97,8 +85,8 @@
         </h2>
 
         <div class="my-5">
-          <div class="row gy-5">
-            <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="row row row-cols-md-2 row-cols-lg-5 gy-4">
+            <div class="col-12">
               <div class="movie__element">
                 <div class="movie-img">
                   <img src="img/m1.jpg" alt="this is a movie" />
@@ -107,7 +95,7 @@
                 <span>120min | Action</span>
               </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="col-12">
               <div class="movie__element">
                 <div class="movie-img">
                   <img src="img/m2.jpg" alt="this is a movie" />
@@ -116,7 +104,7 @@
                 <span>105min | Adventure</span>
               </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="col-12">
               <div class="movie__element">
                 <div class="movie-img">
                   <img src="img/m3.jpg" alt="this is a movie" />
@@ -125,7 +113,7 @@
                 <span>100min | Thriller</span>
               </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="col-12">
               <div class="movie__element">
                 <div class="movie-img">
                   <img src="img/m4.jpg" alt="this is a movie" />
@@ -135,7 +123,7 @@
               </div>
             </div>
 
-            <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="col-12">
               <div class="movie__element">
                 <div class="movie-img">
                   <img src="img/m5.jpg" alt="this is a movie" />
@@ -144,7 +132,7 @@
                 <span>130min | Action</span>
               </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="col-12">
               <div class="movie__element">
                 <div class="movie-img">
                   <img src="img/m6.jpg" alt="this is a movie" />
@@ -153,7 +141,7 @@
                 <span>90min | Thriller</span>
               </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="col-12">
               <div class="movie__element">
                 <div class="movie-img">
                   <img src="img/m7.jpg" alt="this is a movie" />
@@ -162,7 +150,7 @@
                 <span>130min | Action</span>
               </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="col-12">
               <div class="movie__element">
                 <div class="movie-img">
                   <img src="img/m8.png" alt="this is a movie" />
@@ -171,7 +159,7 @@
                 <span>100min | Thriller</span>
               </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="col-12">
               <div class="movie__element">
                 <div class="movie-img">
                   <img src="img/m9.jpg" alt="this is a movie" />
@@ -180,7 +168,7 @@
                 <span>100min | Action</span>
               </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="col-12">
               <div class="movie__element">
                 <div class="movie-img">
                   <img src="img/m10.jpg" alt="this is a movie" />
@@ -340,5 +328,6 @@
     </div>
 
     <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
